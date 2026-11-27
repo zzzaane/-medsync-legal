@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medaily — Conditions et mentions légales</title>
+<meta name="description" content="Conditions et mentions légales de l'application Medaily.">
+<style>
+  :root {
+    --primary: #0F6E56;
+    --primary-light: #E6F4F0;
+    --primary-border: #BFE3D8;
+    --bg: #FAFAF9;
+    --card: #FFFFFF;
+    --border: #E5E5E3;
+    --text: #1A1A18;
+    --text-secondary: #55534E;
+    --text-muted: #8B897F;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+  }
+  header {
+    background: var(--primary);
+    color: white;
+    padding: 28px 20px 24px;
+    text-align: center;
+  }
+  header h1 { margin: 0 0 6px; font-size: 22px; font-weight: 700; }
+  header p { margin: 0; font-size: 13px; opacity: 0.85; }
+  .lang-switch {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .lang-switch button {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .lang-switch button.active { background: white; color: var(--primary); }
+  main {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 20px 16px 40px;
+  }
+  .intro {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: var(--primary-light);
+    border: 1px solid var(--primary-border);
+    border-radius: 14px;
+    padding: 14px;
+    margin-bottom: 16px;
+  }
+  .intro strong { display: block; color: var(--primary); font-size: 15px; margin-bottom: 3px; }
+  .intro span { font-size: 13px; color: var(--text-secondary); }
+  section.item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
+  }
+  section.item h2 {
+    font-size: 14px;
+    margin: 0 0 6px;
+    font-weight: 700;
+  }
+  section.item p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 0;
+    white-space: pre-line;
+  }
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Medaily</h1>
+  <p id="header-sub">Conditions et mentions légales</p>
+  <div class="lang-switch">
+    <button id="btn-fr" class="active" onclick="setLang('fr')">Français</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+</header>
+
+<main>
+
+<div id="lang-fr" class="lang-block active">
+  <div class="intro">
+    <div>
+      <strong>Un outil d'aide au suivi</strong>
+      <span>Medaily ne remplace pas l'avis de votre médecin ou de votre pharmacien.</span>
+    </div>
+  </div>
+
+  <section class="item"><h2>Mentions légales</h2><p>Éditeur : Tom Hardy, développeur indépendant (particulier). Contact : medailysupport@gmail.com.
+
+Hébergement des pages web : GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis.
+
+L'application est distribuée par l'App Store d'Apple. Elle fonctionne sans serveur : aucune donnée saisie n'est hébergée par l'éditeur.</p></section>
+  <section class="item"><h2>1. Objet</h2><p>Medaily est un outil gratuit d'aide au suivi de traitement : rappels, historique, informations générales sur les médicaments. Ce n'est pas un dispositif médical.</p></section>
+  <section class="item"><h2>2. Pas d'avis médical</h2><p>Les informations affichées sont générales et peuvent être incomplètes ou ne pas être à jour. Elles ne remplacent ni votre ordonnance, ni la notice, ni l'avis de votre médecin ou pharmacien. Ne modifiez jamais un traitement sur la seule base de l'application.
+
+En cas d'urgence, appelez le 15 (SAMU) ou le 112.</p></section>
+  <section class="item"><h2>3. Rappels</h2><p>Les rappels dépendent de votre téléphone (notifications autorisées, mode silencieux ou concentration, batterie, mises à jour d'iOS). Medaily ne peut pas garantir qu'un rappel sera toujours délivré : gardez vos propres repères pour les traitements importants.</p></section>
+  <section class="item"><h2>4. Vos saisies</h2><p>Vous êtes responsable de l'exactitude des médicaments, dosages et horaires que vous enregistrez. Vérifiez toujours ce que le scan a pré-rempli.</p></section>
+  <section class="item"><h2>5. Associations de médicaments</h2><p>Les associations signalées par Medaily reposent sur quelques grandes familles de médicaments. Ce signalement est général et non exhaustif : l'absence de signalement ne veut pas dire qu'une association est sans risque. Demandez conseil à votre pharmacien.</p></section>
+  <section class="item"><h2>6. Données sur les médicaments</h2><p>Les données sur les médicaments sont issues de la Base de données publique des médicaments (base-donnees-publique.medicaments.gouv.fr). Medaily n'est ni affilié ni approuvé par l'ANSM, la HAS ou l'Assurance Maladie.</p></section>
+  <section class="item"><h2>7. Responsabilité</h2><p>Dans les limites permises par la loi, l'éditeur ne peut être tenu responsable d'un dommage lié à une saisie erronée, à un rappel non reçu ou à l'usage des informations générales de l'application.</p></section>
+  <section class="item"><h2>8. Licence et droit applicable</h2><p>L'application est fournie selon la licence d'utilisation standard de l'App Store d'Apple, complétée par ces conditions. Droit français. Contact : medailysupport@gmail.com.</p></section>
+
+  <footer>Dernière mise à jour : 27 novembre 2026</footer>
+</div>
+
+<div id="lang-en" class="lang-block">
+  <div class="intro">
+    <div>
+      <strong>A tool to help you follow your treatment</strong>
+      <span>Medaily does not replace the advice of your doctor or pharmacist.</span>
+    </div>
+  </div>
+
+  <section class="item"><h2>Legal notice</h2><p>Publisher: Tom Hardy, independent developer (private individual). Contact: medailysupport@gmail.com.
+
+Web pages hosted by GitHub Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+
+The app is distributed through Apple's App Store. It runs without any server: no data you enter is hosted by the publisher.</p></section>
+  <section class="item"><h2>1. Purpose</h2><p>Medaily is a free tool to help you follow your treatment: reminders, history, general information about medications. It is not a medical device.</p></section>
+  <section class="item"><h2>2. Not medical advice</h2><p>The information shown is general and may be incomplete or out of date. It does not replace your prescription, the patient leaflet, or the advice of your doctor or pharmacist. Never change a treatment based on the app alone.
+
+In an emergency, call your local emergency number (112 in the EU).</p></section>
+  <section class="item"><h2>3. Reminders</h2><p>Reminders depend on your phone (notifications allowed, silent or Focus mode, battery, iOS updates). Medaily cannot guarantee that a reminder will always be delivered: keep your own cues for important treatments.</p></section>
+  <section class="item"><h2>4. What you enter</h2><p>You are responsible for the accuracy of the medications, dosages and times you record. Always check what the scan has pre-filled.</p></section>
+  <section class="item"><h2>5. Medication combinations</h2><p>The combinations Medaily points out are based on a few broad drug families. This notice is general and not exhaustive: no notice does not mean a combination is safe. Ask your pharmacist.</p></section>
+  <section class="item"><h2>6. Medication data</h2><p>Medication data comes from the French public medications database (base-donnees-publique.medicaments.gouv.fr). Medaily is not affiliated with or endorsed by ANSM, HAS or Assurance Maladie.</p></section>
+  <section class="item"><h2>7. Liability</h2><p>To the extent permitted by law, the publisher cannot be held liable for damage resulting from incorrect entries, a reminder not received, or use of the app's general information.</p></section>
+  <section class="item"><h2>8. Licence and governing law</h2><p>The app is provided under Apple's standard App Store licence agreement, supplemented by these terms. French law applies. Contact: medailysupport@gmail.com.</p></section>
+
+  <footer>Last updated : November 27, 2026</footer>
+</div>
+
+</main>
+
+<script>
+function setLang(l) {
+  document.getElementById('lang-fr').classList.toggle('active', l === 'fr');
+  document.getElementById('lang-en').classList.toggle('active', l === 'en');
+  document.getElementById('btn-fr').classList.toggle('active', l === 'fr');
+  document.getElementById('btn-en').classList.toggle('active', l === 'en');
+  document.getElementById('header-sub').textContent = l === 'fr' ? 'Conditions et mentions légales' : 'Terms and legal notice';
+  document.documentElement.lang = l;
+}
+</script>
+
+</body>
+</html>
